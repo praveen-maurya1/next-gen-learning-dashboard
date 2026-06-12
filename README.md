@@ -1,36 +1,217 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Student Learning Dashboard
 
-## Getting Started
+A modern and responsive Student Learning Dashboard built using **Next.js App Router**, **Supabase**, **Tailwind CSS**, and **Framer Motion**.
 
-First, run the development server:
+## 🌟 Features
+
+* Responsive Bento Grid Layout
+* Dark Mode UI
+* Server Component Data Fetching
+* Supabase PostgreSQL Integration
+* Dynamic Course Cards
+* Dynamic Lucide Icons
+* Animated Progress Bars
+* Activity Visualization Chart
+* Loading Skeletons
+* Error Handling
+* Mobile Bottom Navigation
+* Framer Motion Hover Animations
+
+---
+
+## 🛠 Tech Stack
+
+* Next.js 16 (App Router)
+* React
+* Supabase
+* PostgreSQL
+* Tailwind CSS
+* Framer Motion
+* Lucide React
+
+---
+
+## 📂 Project Structure
+
+```text
+app/
+├── layout.js
+├── page.js
+├── loading.js
+├── error.js
+├── globals.css
+
+components/
+├── Sidebar.jsx
+├── MobileNav.jsx
+├── HeroCard.jsx
+├── CourseCard.jsx
+├── ActivityCard.jsx
+
+lib/
+├── supabase.js
+```
+
+---
+
+## 🗄 Database Schema
+
+### courses
+
+| Column     | Type      |
+| ---------- | --------- |
+| id         | uuid      |
+| title      | text      |
+| progress   | integer   |
+| icon_name  | text      |
+| created_at | timestamp |
+
+---
+
+## ⚡ Architecture
+
+The application uses **Next.js Server Components** to fetch course data directly from Supabase before rendering the page.
+
+### Benefits
+
+* Better performance
+* Reduced client-side JavaScript
+* Faster initial page load
+* Cleaner data flow
+* Secure database communication
+
+---
+
+## 🎨 Animations
+
+Implemented using Framer Motion:
+
+* Card Hover Effects
+* Animated Progress Bars
+* Smooth Entrance Animations
+* Spring-Based Interactions
+* Interactive Navigation Elements
+
+---
+
+## 📱 Responsive Design
+
+### Desktop (>1024px)
+
+* Full Sidebar Navigation
+* Multi-column Bento Grid Layout
+
+### Tablet (768px–1024px)
+
+* Optimized Grid Layout
+* Responsive Card Arrangement
+
+### Mobile (<768px)
+
+* Bottom Navigation Bar
+* Single Column Layout
+* Touch Friendly UI
+
+---
+
+## 🔧 Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Create a `.env.example` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+---
+
+## ▶️ Run Locally
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The application is deployed using **Vercel**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Before deployment:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Add environment variables in Vercel.
+2. Connect your GitHub repository.
+3. Deploy automatically.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Live Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://your-vercel-link.vercel.app
+
+---
+
+## 📂 GitHub Repository
+
+https://github.com/praveen-maurya1/student-learning-dashboard
+
+---
+
+## 📸 Preview
+
+Add your project screenshot here after deployment.
+
+---
+
+## 🎯 Assignment Highlights
+
+* Next.js App Router
+* Server Components
+* Supabase Integration
+* Responsive Bento Grid Layout
+* Framer Motion Animations
+* Dynamic Course Rendering
+* Loading Skeletons
+* Error Boundaries
+* Mobile Navigation
+* Modern Dark UI
+
+---
+
+## 👨‍💻 Author
+
+**Praveen Maurya**
+
+* GitHub: https://github.com/praveen-maurya1
+* LinkedIn: Add your LinkedIn profile here
+
+Built as part of a Frontend Intern Challenge using Next.js, Supabase, Tailwind CSS, and Framer Motion.
+
+⭐ If you found this project useful, consider giving it a star.
