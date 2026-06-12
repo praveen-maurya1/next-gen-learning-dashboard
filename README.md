@@ -123,15 +123,6 @@ NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-Create a `.env.example` file:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-```
-
----
-
 ## ▶️ Run Locally
 
 Clone the repository:
@@ -174,19 +165,20 @@ Before deployment:
 
 ## 🌐 Live Demo
 
-https://your-vercel-link.vercel.app
+https://next-gen-learning-dashboard-ecru.vercel.app/
 
 ---
 
 ## 📂 GitHub Repository
 
-https://github.com/praveen-maurya1/student-learning-dashboard
+https://github.com/praveen-maurya1/next-gen-learning-dashboard
 
 ---
 
 ## 📸 Preview
 
-Add your project screenshot here after deployment.
+![Student Dashboard](./public/2.png)
+![Student Dashboard](./public/1.png)
 
 ---
 
@@ -210,7 +202,7 @@ Add your project screenshot here after deployment.
 **Praveen Maurya**
 
 * GitHub: https://github.com/praveen-maurya1
-* LinkedIn: Add your LinkedIn profile here
+* LinkedIn: www.linkedin.com/in/praveen-maurya-722a393a1
 
 Built as part of a Frontend Intern Challenge using Next.js, Supabase, Tailwind CSS, and Framer Motion.
 
